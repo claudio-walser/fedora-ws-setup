@@ -6,7 +6,7 @@ sudo dnf update -y
 # remove for reinstallation
 # sudo rm -f /etc/X11/xorg.conf.internal /etc/X11/xorg.conf.internal /etc/systemd/system/egpu.service /usr/local/bin/egpu
 for FILE in "/usr/local/bin/egpu" "/etc/systemd/system/egpu.service" "/etc/X11/xorg.conf.egpu" "/etc/X11/xorg.conf.internal"; do
-    
+
     FILE_BASENAME=$(sudo basename $FILE)
 
     if [ ! -f $FILE ]; then
@@ -59,7 +59,8 @@ sudo dnf install -y gstreamer1-plugins-bad-free gstreamer1-plugin-openh264
 # install nice themes
 sudo dnf install -y arc-theme gnome-tweak-tool gtk-murrine-engine
 cd /tmp
-git clone https://github.com/horst3180/arc-icon-theme && cd arc-icon-theme
-mv ./Arc ~/.icons
-cd ..
+git clone https://github.com/horst3180/arc-icon-theme
+mkdir ~/.icons
+mv ./arc-icon-theme/Arc ~/.icons/
 rm -rf ./arc-icon-theme
+cd -
