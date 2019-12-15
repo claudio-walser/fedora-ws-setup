@@ -57,6 +57,9 @@ sudo dnf install -y yubikey-manager.noarch
 
 sudo dnf install -y gstreamer1-plugins-bad-free gstreamer1-plugin-openh264
 
+sudo dnf install -y nano
+
+
 # install nice themes
 sudo dnf install -y arc-theme gnome-tweak-tool gtk-murrine-engine
 cd /tmp
