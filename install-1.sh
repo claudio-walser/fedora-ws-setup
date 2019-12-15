@@ -46,8 +46,9 @@ sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
 # install some flatpaks
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub com.sublimetext.three
-flatpak install -y flathub org.videolan.VLC
-flatpak install -y flathub com.slack.Slack
+flatpak install -y org.videolan.VLC
+flatpak install -y com.slack.Slack
+flatpak install -y org.keepassxc.KeePassXC
 
 
 # install yubikey
